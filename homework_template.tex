@@ -15,40 +15,10 @@
 \usetikzlibrary{automata}
 \usetikzlibrary{backgrounds}
 \tikzset{>=stealth}
-\def\firstcircle{(90:.75cm) circle (1cm)}
-\def\secondcircle{(210:.75cm) circle (1cm)}
-\def\thirdcircle{(330:.75cm) circle (1cm)}
 % FSM GENERATOR:
 % https://www.cefns.nau.edu/~edo/Classes/CS315_WWW/Tools/fsm.html
 
 \newcommand*{\QED}{\hfill\ensuremath{\blacksquare}} 
-
-\makeatletter
-\newcommand*{\indep}{%
-  \mathbin{%
-    \mathpalette{\@indep}{}%
-  }%
-}
-\newcommand*{\nindep}{%
-  \mathbin{%                   % The final symbol is a binary math operator
-    \mathpalette{\@indep}{\not}% \mathpalette helps for the adaptation
-                               % of the symbol to the different math styles.
-  }%
-}
-\newcommand*{\@indep}[2]{%
-  % #1: math style
-  % #2: empty or \not
-  \sbox0{$#1\perp\m@th$}%        box 0 contains \perp symbol
-  \sbox2{$#1=$}%                 box 2 for the height of =
-  \sbox4{$#1\vcenter{}$}%        box 4 for the height of the math axis
-  \rlap{\copy0}%                 first \perp
-  \dimen@=\dimexpr\ht2-\ht4-.2pt\relax
-  \kern\dimen@
-  {#2}%
-  \kern\dimen@
-  \copy0 %                       second \perp
-} 
-\makeatother
 
 \title{Homework Template}
 
@@ -59,11 +29,6 @@
 
 \begin{document}
 
-\colorlet{circle edge}{blue!10}
-\colorlet{circle area}{blue!10}
-
-\tikzset{filled/.style={fill=circle area, draw=circle edge, thick},
-    outline/.style={fill=circle area, draw=circle edge, thick}}
 (Type your content here.)
 
 
