@@ -36,17 +36,28 @@ For this, make sure you have the file you want to show in the same directory as 
 
 **QED sign for the end of proofs:**
 
-This one is a little more complicated. We add a new command via the following line 
+Add a new command and corresponding package via the following line, make sure these lines are both above `begin{document}` 
 
 ```
+\usepackage{amssymb}
 \newcommand*{\QED}{\hfill\ensuremath{\blacksquare}}
 ```
 
 And to use it simply write `\QED`
 
-**Sample bi-partite graph:**
+**Header on each page**
 
+Include all of the following before `\begin{document}`
 
+```
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Left header}
+\rhead{Right header}
+\renewcommand{\headrulewidth}{1pt}
+```
+
+If you don't want a line accross the top, you can change the `1pt` to `0pt`. If you delete the line there will still be a line across the top, it's the default. 
 
 
 For a template LaTeX document with all of the packages you need to make everything above, see my `homework_template.tex` document in this repository. 
