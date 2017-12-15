@@ -45,6 +45,34 @@ Add a new command and corresponding package via the following line, make sure th
 
 And to use it simply write `\QED`
 
+**Make a matrix**
+
+```
+\usepackage{amsmath}
+```
+
+```
+\[
+\begin{pmatrix}
+    1 & 0 \\
+    0 & 1
+\end{pmatrix}
+\]
+```
+
+**Align Equations**
+
+```
+\usepackage{amsmath}
+```
+
+```
+\begin{align*}
+e^{i\pi}+1 &= -1+1 \\
+           &= 0
+\end{align*}
+```
+
 **Header on each page**
 
 Include all of the following before `\begin{document}`
