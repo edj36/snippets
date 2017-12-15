@@ -36,7 +36,7 @@ For this, make sure you have the file you want to show in the same directory as 
 
 **QED sign for the end of proofs:**
 
-Add a new command and corresponding package via the following line, make sure these lines are both above `begin{document}` 
+Add a new command and corresponding package via the following line, make sure these lines are both above `\begin{document}` 
 
 ```
 \usepackage{amssymb}
@@ -57,7 +57,7 @@ Include all of the following before `\begin{document}`
 \renewcommand{\headrulewidth}{1pt}
 ```
 
-If you don't want a line accross the top, you can change the `1pt` to `0pt`. If you delete the line there will still be a line across the top, it's the default. 
+If you don't want a line across the top, you can change the `1pt` to `0pt`. If you delete the `\renewcommand` line there will still be a line across the top, it's the default. 
 
 
 For a template LaTeX document with all of the packages you need to make everything above, see my `homework_template.tex` document in this repository. 
