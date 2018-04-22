@@ -6,3 +6,15 @@ Some useful commands I tend to have to google when using the terminal. My main m
 ```
 mv <path/to/old.txt> <path/to/new.txt>
 ```
+
+**Pandoc**
+
+Markdown to standalone HTML (.txt could also be .md)
+```
+pandoc -s MANUAL.txt -o example2.html
+```
+
+**Jupyter notebook to .tex file**
+```
+jupyter nbconvert --to latex notebook.ipynb
+```
