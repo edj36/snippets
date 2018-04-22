@@ -18,3 +18,8 @@ pandoc -s MANUAL.txt -o example2.html
 ```
 jupyter nbconvert --to latex notebook.ipynb
 ```
+
+**Compile LaTeX**
+```
+pdflatex file.tex
+```
