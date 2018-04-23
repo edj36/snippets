@@ -87,5 +87,16 @@ Include all of the following before `\begin{document}`
 
 If you don't want a line across the top, you can change the `1pt` to `0pt`. If you delete the `\renewcommand` line there will still be a line across the top, it's the default. 
 
+**Include code from another file**
+
+For when you need to include source code (an entire separate file, not a code snippet) you wrote for something you are writing about. This is easiest as long as you have the file of code in the same location as your .tex document. 
+
+```
+\usepackage{listings}
+```
+
+```
+\lstinputlisting{helloworld.py}
+```
 
 For a template LaTeX document with all of the packages you need to make everything above, see my `homework_template.tex` document in this repository. 
